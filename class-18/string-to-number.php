@@ -33,6 +33,6 @@
 
     for($i = 0; $i < $size; $i++)
     {
-         echo $letters[$name[$i]];
-        //  break;
+        
     }
+    echo $letters[$name[$i]];
