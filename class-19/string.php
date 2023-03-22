@@ -1,35 +1,26 @@
 <?php
-// $name = 'city polytecnic Institute';
-// $name2 = 'tecnic';
-// $array = str_split($name,$name2);
-// $siz = sizeof($array);
+    $string = 'tecnical';
+    $sub_string = 'nic';
 
-// for($count = 0; $count <= $size; $count++)
-// {
-//     if($name2 == $size);
-// }
-// echo 
+    $array = str_split($string);
+    $sub_array = str_split($sub_string);
 
+    $size = sizeof($array);
+    $sub_size = sizeof($sub_array);
 
-$name = "City Polytechnic Institute";
-$array = str_split($name);
-$array_size = sizeof($array);
+    $position = [];
 
-
-$$name2 = "tec";
-$array = ste_split($name2)
-$array_size = sizeof($array);
-
-for($i = 0; $i <= $array_size; $i++)
-{
-    for($j = 0; $j <= $name2_size; $j++)
+    for( $i=0; $i<$sub_size; $i++ )
     {
-        if($array[$i] == $array[$j])
-        {				
-            echo $name2;
-          
-        }
-            
+        for( $j=0; $j<$size; $j++ )
+        {
+            if( $sub_array[$i] == $array[$j] )
+            {
+                array_push($position,$j);
+            }
+               
         
+        }        
     }
-}    
+    echo $position[0];
+    
