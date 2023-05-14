@@ -14,14 +14,20 @@
     public function sub()
     {
         return $rasult = $this->n1 - $this->n2;
+        $this->n1 = $n1;
+        $this->n2 = $n2;
     }
     public function mul()
     {
         return $rasult = $this->n1 * $this->n2;
+        $this->n1 = $n1;
+        $this->n2 = $n2;
     }
     public function div()
     {
         return $rasult = $this->n1 / $this->n2;
+        $this->n1 = $n1;
+        $this->n2 = $n2;
     }
  }
 

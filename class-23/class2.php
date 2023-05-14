@@ -3,4 +3,4 @@
 
  $mahadi = new calculation();
 
- echo $mahadi->sum(2,4);
+ echo $mahadi->sum(2,5);
