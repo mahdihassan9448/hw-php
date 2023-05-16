@@ -11,11 +11,11 @@
             $this->Numbertwo = $n2;
 
             $a= $this->NumberOne + $this->Numbertwo ;
-            return $a ;
+            return $a ; //
 
         }
     }
 
     $objectcalculation = new calculation();
-    echo $objectcalculation->sum (25,45);
+    echo $objectcalculation->sum(25,45);
 

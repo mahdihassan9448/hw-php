@@ -23,11 +23,13 @@
 	}
 
 
-	class Child extends ParentClass{          // multi level
+	class Child extends ParentClass
+    {                                        // multi level
 
 	}
 
-	class GrandChild extends Child{
+	class GrandChild extends Child
+    {
 		
 	}
 
