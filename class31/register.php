@@ -5,10 +5,10 @@
     $db = 'wd2';
 
     $connection = mysqli_connect($host, $name,$pass,$db);
-
-    if(!$connection){
+    
+    if(!$connection)
         echo "Connection Failed !";
-    }
+    
 
 
     if(isset($_POST['submit']))

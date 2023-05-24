@@ -1,11 +1,38 @@
 <?php
+    $Host = 'localhost';
+    $name = 'root';
+    $password = '';
+    $DB = 'mahdi';
+
+    $conection = mysqli_connect($Host,$Name,$password,$DB);
+    if($connection)
+        echo 'connection is succsess';
+    else
+        echo 'connection is not succsess';
+
+
+    if(isset($_POST ['submit'])){
+        $Name = $_POST['name'];
+        // $Email = $_POST['email'];
+        $password = sha1( $_POST['password']);
+        // $Number = $_POST['number'];
+
+        $Query = "INSERT INTO users (name,password,status) 
+         VALUES ('$Name','$Password','1')";
+
+        $Rasult = mysqli_query($conection,$Query);
+        if($Rasult){
+            echo "data insertion successfull";
+        }
+        else{
+            "data insertion is not successfull";
+        }
+        
+    }
+
+   
     
-    $hsg=75;
-    echo $hsg;
-    
-    
-    
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,9 +45,10 @@
 <body>
     <div class="wrapper">
         <h1>Loging</h1>
-        <form action="#">
-            <input type="text" placeholder="user-name"><br><br>
-            
+        <form action="loging-pag.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="user-name"><br><br>
+            <input type="passwordt" name="password" placeholder="password"><br><br>
+            <input type="submit" name="submit" value="submit">
         </form>
     </div>
     
