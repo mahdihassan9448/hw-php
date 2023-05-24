@@ -1,31 +1,31 @@
 <?php
-        // $host = 'localhost';
-        // $name = 'root';
-        // $pass = '';
-        // $db = 'wd2';
+        $host = 'localhost';
+        $name = 'root';
+        $pass = '';
+        $db = 'wd2';
     
-        // $connection = mysqli_connect($host, $name,$pass,$db);
+        $connection = mysqli_connect($host, $name,$pass,$db);
     
-        // if(!$connection){
-        //     echo "Connection Failed !";
-        // }
+        if(!$connection){
+            echo "Connection Failed !";
+        }
     
     
-        // if(isset($_POST['submit']))
-        // {
-        //     $name = $_POST['name'];
-        //     $password = sha1($_POST['password']);
+        if(isset($_POST['submit']))
+        {
+            $name = $_POST['name'];
+            $password = sha1($_POST['password']);
 
-        //    echo $query = "INSERT INTO user( name, password) VALUES ('$name','$password')";
+           echo $query = "INSERT INTO user( name, password) VALUES ('$name','$password')";
 
-        //     $result = mysqli_query($connection,$query);
+            $result = mysqli_query($connection,$query);
 
-        //     if($result){
-        //         echo "Login Successfully";
-        //     }else{
-        //         echo "Login Failed !";
-        //     }
-        //  }
+            if($result){
+                echo "Login Successfully";
+            }else{
+                echo "Login Failed !";
+            }
+         }
     
     
 ?>
