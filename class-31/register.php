@@ -1,38 +1,37 @@
 <?php
     $Host = 'localhost';
-    $name = 'root';
+    $Name = 'root';
     $password = '';
     $DB = 'mahdi';
 
-    $conection = mysqli_connect($Host,$Name,$password,$DB);
+    $connection = mysqli_connect($Host,$Name,$password,$DB);
     if($connection)
         echo 'connection is succsess';
     else
-        echo 'connection is not succsess';
+        echo 'connection is not succsess'; 
 
 
-    // if(isset($_POST ['submit'])){
-    //     $Name = $_POST['name'];
-    //     $Email = $_POST['email'];
-    //     $password = sha1( $_POST['password']);
-    //     // $Number = $_POST['number'];
+    if(isset($_POST ['submit'])){
+        $Name = $_POST['name'];
+        $Email = $_POST['email'];
+        $password = $_POST['password'];
+       
+        $Query = "INSERT INTO user(name,email,password) 
+         VALUES('$Name','$Email','$password')";
 
-    //     $Query = "INSERT INTO users (name,email,password) 
-    //      VALUES ('$Name',$Email,'$Password')";
-
-    //     $Rasult = mysqli_query($conection,$Query);
-    //     if($Rasult){
-    //         echo "data insertion successfull";
-    //     }
-    //     else{
-    //         "data insertion is not successfull";
-    //     }
+        $Rasult = mysqli_query($connection,$Query);
+        if($Rasult){
+            echo "data insertion successfull";
+        }
+        else{
+            "data insertion is not successfull";
+        }
         
-    // } 
+    } 
     
 ?>
 
-<!-- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +43,7 @@
 <body>
     <div class="wrapper">
         <h1>Register Form</h1>
-        <form action="register.php" method="post" enctype="multipart/form-data">
+        <form action="Register.php" method="post" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="name"><br><br>
             <input type="email" name="email" placeholder="email"><br><br>
             <input type="password" name="password" placeholder="password"><br><br>
@@ -55,4 +54,4 @@
     </div>
     
 </body>
-</html> -->
+</html>
