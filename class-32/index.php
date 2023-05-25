@@ -29,6 +29,7 @@
     }
 
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,12 +43,11 @@
 <body>
     <div class="wrapper">
         <h1>Register</h1>
-        <form action="register.php" method="post" enctype="multipart/form-data">
+        <form action="Cunnection.php" method="post" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="name"><br><br>
             <input type="email" name="email" placeholder="email"><br><br>
             <input type="password" name="password" placeholder="password"><br><br>
             <input type="int" name="number" placeholder="phon-number"><br><br>
-            <!-- <input type="sbumit" value="submit"> -->
             <input type="submit" name="submit" value="submit">
         </form>
     </div>
