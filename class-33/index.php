@@ -1,5 +1,5 @@
 <?php
-    include('cunnection.php');
+    include('connection.php');
     
 
 
@@ -35,7 +35,7 @@
 <body>
     <div class="wrapper">
         <h1>Register</h1>
-        <form action="Cunnection.php" method="post" enctype="multipart/form-data">
+        <form action="Connection.php" method="post" enctype="multipart/form-data">
             <input type="text" name="name" placeholder="name"><br><br>
             <input type="email" name="email" placeholder="email"><br><br>
             <input type="password" name="password" placeholder="password"><br><br>
