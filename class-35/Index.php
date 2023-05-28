@@ -33,8 +33,9 @@
 </head>
 <body>
     <div class="container">
+    <a href="list.php">List</a>
         <form action="index.php" enctype="miltipart/form-data" method="POST">
-            <h1>Student Enty</h1>
+            
             <input type="text" name="name" placeholder="name" class="form-control"> <br><br>
             <input type="numbrr" name="rool" placeholder="rool" class="form-control"> <br><br>
             <input type="number" name="phone" placeholder="contact-number" class="form-control"> <br><br>
