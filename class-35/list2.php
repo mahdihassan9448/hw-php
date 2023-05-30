@@ -1,22 +1,21 @@
 <?php
     include('Connection.php');
 
-    if (isset($_REQUEST['a'])) 
-    {
-		$id = $_REQUEST['id'];
+    if (isset($_POST['submit'])) {
+        if($_POST['submit'] == 'delete') {
+           $id =$_POST['id'];
 
-		$Query = "DELETE FROM user where id = $id";
+           $Query =" DELETE FORM user Where id = $id";
 
-		$Result = mysqli_query($Connection, $Query);
+           $Rasult = mysqli_query($Connection,$Query);
 
-		if ($Result) {
-			echo "Data Deleted Successfully ";
-		}
-		else
-		{
-			echo "Something went wrong ";
-		}
-	}
+            if($Rasult) {
+                echo "Delete success full";
+            } 
+            else "somthig is eorng";
+        }
+    }
+
 
     $Query = "SELECT * FROM user";
     $Result = mysqli_query ($Connection,$Query);
@@ -52,10 +51,13 @@
                     <td><?php echo $Row['name']; ?></td>
                     <td><?php echo $Row['rool']; ?></td>
                     <td><?php echo $Row['phone']; ?></td>
-
+        
                     <td>
                         <a href="">Edet</a>
-                        <a href="list.php?a=delet&id=<?php echo $Row['id']; ?>">Delet</a>     
+                        <form action="list2.php" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="<?php echo $Row['id']; ?>">
+                            <input type="submit" name="submit" value="Delete">
+                        </form>     
                     </td>
                 </tr>
             <?php
