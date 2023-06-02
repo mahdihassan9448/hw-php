@@ -1,24 +1,19 @@
 <?php
-   include('Connection.php');
+   include('connection.php');
 
     if(isset($_POST['submit'])){
         $Name = $_POST['name'];
-        $Rool = $_POST['rool'];
+        $Roll = $_POST['roll'];
         $Phone = $_POST['phone'];
-        $Addres = $_POST['addres'];
+        $Address = $_POST['address'];
 
-        $Query = "INSERT INTO user( name, rool, phone, addres) VALUES ('$Name','$Rool','$Phone','$Addres')";
+        $Query = "INSERT INTO students( name, roll, phone, address) 
+        VALUES ('$Name','$Roll','$Phone','$Address')";
 
         $Result = mysqli_query($Connection,$Query);
-        if($Result){
-            echo "Registration Successfully";
-        }else{
-            echo "Registration Failed !";
-        }
-
+        if(!$Result)
+            echo "Registration Failed ";
     }
-    
-
 
 ?>
 
@@ -36,11 +31,11 @@
     <a href="list.php">List</a>
         <form action="index.php" enctype="miltipart/form-data" method="POST">
             
-            <input type="text" name="name" placeholder="name" class="form-control"> <br><br>
-            <input type="numbrr" name="rool" placeholder="rool" class="form-control"> <br><br>
-            <input type="number" name="phone" placeholder="contact-number" class="form-control"> <br><br>
-            <textarea name="addres" id="" cols="30" rows="10"></textarea><br><br>
-            <input type="submit" name="submit" value="register" class="form-control"> <br><br>
+            <input type="text" name="name" placeholder="name" > <br><br>
+            <input type="numbrr" name="roll" placeholder="roll"> <br><br>
+            <input type="number" name="phone" placeholder="phone"> <br><br>
+            <textarea name="address" id="" cols="30" rows="10"></textarea><br><br>
+            <input type="submit" name="submit" value="register"><br><br>
             
         </form>
     </div>

@@ -1,7 +1,7 @@
 <?php
     include('Connection.php');
 
-    if (isset($_REQUEST['a'])) 
+    if (isset($_REQUEST['action'])) 
     {
 		$id = $_REQUEST['id'];
 
@@ -9,16 +9,15 @@
 
 		$Result = mysqli_query($Connection, $Query);
 
-		if ($Result) {
+		if ($Result){
 			echo "Data Deleted Successfully ";
-		}
-		else
-		{
+        }
+		else{
 			echo "Something went wrong ";
 		}
 	}
 
-    $Query = "SELECT * FROM user";
+    $Query = "SELECT * FROM students";
     $Result = mysqli_query ($Connection,$Query);
     
 ?> 
@@ -39,7 +38,7 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Rool</th>
+                <th>Roll</th>
                 <th>Phpne</th>
                 <th>Action</th>
             </tr>
@@ -50,7 +49,7 @@
                 <tr>
                     <td><?php echo $Row['id']; ?></td>
                     <td><?php echo $Row['name']; ?></td>
-                    <td><?php echo $Row['rool']; ?></td>
+                    <td><?php echo $Row['roll']; ?></td>
                     <td><?php echo $Row['phone']; ?></td>
 
                     <td>

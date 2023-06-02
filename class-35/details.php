@@ -50,6 +50,10 @@
                 <td>Phone</td>
                 <td> <?php echo $Result ['phone']; ?></td>
             </tr>
+            <tr>
+                <td>Addres</td>
+                <td> <?php echo $Result ['addres']; ?></td>
+            </tr>
         </tbody>
     </table>
 </body>

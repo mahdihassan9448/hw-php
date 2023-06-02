@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td>Roll</td>
-                <td> <?php echo $Result ['rool']; ?></td>
+                <td> <?php echo $Result ['roll']; ?></td>
             </tr>
             <tr>
                 <td>Phone</td>

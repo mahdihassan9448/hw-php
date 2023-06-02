@@ -57,7 +57,7 @@
             <input type="text" name="name" value="<?php echo $Result['name']; ?>"> <br><br>
             <input type="numbrr" name="rool" value="<?php echo $Result['rool']; ?>"> <br><br>
             <input type="number" name="phone"  value="<?php echo $Result['phone']; ?>"> <br><br>    
-            <textarea name="addres" id="" cols="30" rows="10"  value="<?php echo $Result['addrs']; ?>"></textarea><br><br>
+            <textarea name="addres" id="" cols="30" rows="10"><?php echo $Result['addres']; ?></textarea><br><br>
             <input type="submit" name="submit" value="update student" class="form-control"> <br><br>
 
         </form>

@@ -27,11 +27,13 @@
 </head>
 <body>
 <form > 		
-<input type="text" name="name" placeholder="name" class="form-control"> <br><br>
-            <input type="numbrr" name="rool" placeholder="rool" class="form-control"> <br><br>
-            <input type="number" name="phone" placeholder="contact -number" class="form-control"> <br><br>
-            <textarea name="addres" id="" cols="30" rows="10"></textarea><br><br>
-            <input type="submit" name="submit" value="register" class="form-control"> <br><br>
+	<input type="text" name="name" placeholder="name" > <br><br>
+	<input type="text" name="name" value="<?php echo $Result['name']; ?>"><br><br>
+    <input type="numbrr" name="roll" value="<?php echo $Result['roll']; ?>"><br><br>
+    <input type="number" name="phone"  value="<?php echo $Result['phone']; ?>"><br><br>    
+    <textarea name="addres" id="" cols="30" rows="10"><?php echo $Result['addres']; ?></textarea><br><br>
+    <input type="submit" name="submit" value="update student" class="form-control"><br><br>
+
 
  	</form>
 </body>
