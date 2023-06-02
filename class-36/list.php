@@ -5,15 +5,16 @@
     {
 		$id = $_REQUEST['id'];
 
-		$Query = "DELETE FROM user where id = $id";
+		$Query = "DELETE FROM students where id = $id";
 
 		$Result = mysqli_query($Connection, $Query);
 
-		if ($Result){
+		if ($Result) {
 			echo "Data Deleted Successfully ";
-        }
-		else{
-			echo "Something went wrong ";
+		}
+		else
+		{
+			echo "Something is wrong ";
 		}
 	}
 
@@ -38,7 +39,7 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Roll</th>
+                <th>Rool</th>
                 <th>Phpne</th>
                 <th>Action</th>
             </tr>
@@ -53,9 +54,10 @@
                     <td><?php echo $Row['phone']; ?></td>
 
                     <td>
-                        <a href="">View details</a>
-                        <a href="">Edet</a>
-                        <a href="list.php?a=delet&id=<?php echo $Row['id']; ?>">Delet</a>     
+                        <a href="details.php?action=details&id=<?php 
+                        echo $Row['id']; ?>">View details</a>
+                        <a href="edit.php?action=edit&id=<?php echo $Row['id']; ?>">Edet</a>
+                        <a href="list.php?action=delet&id=<?php echo $Row['id']; ?>">Delet</a>     
                     </td>
                 </tr>
             <?php

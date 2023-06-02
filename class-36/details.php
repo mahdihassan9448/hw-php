@@ -1,11 +1,11 @@
 <?php
-   include ('connection.php');
+   include ('Connection.php');
 
     if(isset($_REQUEST['action'])){
         if($_REQUEST['action'] == 'details'){
            $id = $_REQUEST['id'];
 
-            $Query = "SELECT * FROM user WHERE id = $id LIMIT 1";
+            $Query = "SELECT * FROM students WHERE id = $id LIMIT 1";
 
             $Que = $Result = mysqli_query( $Connection,$Query );
             $Result = mysqli_fetch_assoc( $Result );
@@ -49,6 +49,10 @@
             <tr>
                 <td>Phone</td>
                 <td> <?php echo $Result ['phone']; ?></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td> <?php echo $Result ['address']; ?></td>
             </tr>
         </tbody>
     </table>

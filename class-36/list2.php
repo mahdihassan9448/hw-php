@@ -5,7 +5,7 @@
         if($_POST['submit'] == 'delete') {
            $id =$_POST['id'];
 
-           $Query =" DELETE FORM user Where id = $id";
+           $Query =" DELETE FORM students Where id = $id";
 
            $Rasult = mysqli_query($Connection,$Query);
 
@@ -17,7 +17,7 @@
     }
 
 
-    $Query = "SELECT * FROM user";
+    $Query = "SELECT * FROM students";
     $Result = mysqli_query ($Connection,$Query);
     
 ?> 
@@ -38,7 +38,7 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Rool</th>
+                <th>Roll</th>
                 <th>Phpne</th>
                 <th>Action</th>
             </tr>
@@ -49,7 +49,7 @@
                 <tr>
                     <td><?php echo $Row['id']; ?></td>
                     <td><?php echo $Row['name']; ?></td>
-                    <td><?php echo $Row['rool']; ?></td>
+                    <td><?php echo $Row['roll']; ?></td>
                     <td><?php echo $Row['phone']; ?></td>
         
                     <td>

@@ -54,8 +54,8 @@
                     <td><?php echo $Row['phone']; ?></td>
 
                     <td>
-                        <a href="details.php?action=details&id=
-                        <?php echo $Row['id']; ?>">View details</a>
+                        <a href="details.php?action=details&id=<?php 
+                        echo $Row['id']; ?>">View details</a>
                         <a href="edit.php?action=edit&id=<?php echo $Row['id']; ?>">Edet</a>
                         <a href="list.php?action=delet&id=<?php echo $Row['id']; ?>">Delet</a>     
                     </td>
