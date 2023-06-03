@@ -10,7 +10,7 @@
         }
 
         .navbar {
-            background-color: #222;
+            background-color: #4CAF50;
             padding: 10px;
         }
 
@@ -25,7 +25,7 @@
         }
 
         .navbar a {
-            color: #ccc;
+            color: #fff;
             text-decoration: none;
             padding: 10px;
         }
