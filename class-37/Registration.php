@@ -2,7 +2,7 @@
   include('connection.php');
 
   if(isset($_POST['submit'])) {
-    if($_POST['submit'] == ['Register']) {
+    if($_POST['submit'] == 'Register') {
       $name = $_POST['name'];
       $phone = $_POST['phone'];
       $email = $_POST['email'];
@@ -10,22 +10,21 @@
       $confirm_password = $_POST['confirm_password'];
 
       if($password == $confirm_password){
-         $Query = "INSERT INTO user (name, phone, email, password, )
-          VALUES ('$name', '$phone', '$email', '$password',)";
+         $Query = "INSERT INTO user (name, phone, email, password )
+          VALUES ('$name', '$phone', '$email', '$password')";
         $Result = mysqli_query($Connection, $Query);
-        $Result = mysqli_fetch_assoc($Result);
-        var_dump($Result);
+      
 
-      //   if($Result){
-      //     echo"new user create success";
-      //   }
-      //   else{
-      //     echo "not create user";
-      //   }
+        if($Result){
+          echo"new user create success";
+        }
+        else{
+          echo "not create user";
+        }
 
-      // }
-      // else{
-      //   echo "password is not correct";
+      }
+      else{
+        echo "password is not correct";
       }
     }
   }
@@ -86,7 +85,7 @@ input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 3px solid #777;
 }
 
 input[type="submit"] {
@@ -95,6 +94,10 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
+input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="submit"] {
+      border-radius: 20px;
+    }
+
 
 </style>
 </head>

@@ -1,3 +1,29 @@
+<?php 
+  session_start();
+  include('connection.php');
+
+  if(isset($_POST['submit'])) {
+    if($_POST['submit'] == 'login'){
+      $email = $_POST['email'];
+      $password = $_POST['password'];
+
+      $Query = " SELECT * FROM user WHERE email = '$email' AND password = '$password' ";
+
+      $Result = mysqli_query($Connection, $Query);
+      $Rowes = mysqli_num_rows($Result);
+
+      if($Rowes == 0){
+
+      }
+      else{
+        
+      }
+    }
+  }
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +47,7 @@ body {
   } */
 
 .navbar li {
-    display: inline;
+    display: inline; 
     margin-right: 10px;
   }
 
@@ -53,7 +79,7 @@ input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 3px solid #777;
 }
 
 input[type="submit"] {
@@ -62,7 +88,11 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
-  </style>
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+      border-radius: 20px;
+    }
+
+</style>
 </head>
 <body>
 <div class="navbar">
