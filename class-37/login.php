@@ -1,5 +1,6 @@
 <?php 
   session_start();
+  
   include('connection.php');
 
   if(isset($_POST['submit'])) {
@@ -13,10 +14,11 @@
       $Rowes = mysqli_num_rows($Result);
 
       if($Rowes == 0){
-
+        echo "username or password das't match";
       }
       else{
-        
+        $_SESSION['LoggedIn'] = TRUE;
+        header('Location:edit.php');
       }
     }
   }
