@@ -4,7 +4,7 @@
   include('connection.php');
 
   if(isset($_POST['submit'])) {
-    if($_POST['submit'] == 'login'){
+    if($_POST['submit'] == 'Login'){
       $email = $_POST['email'];
       $password = $_POST['password'];
 
@@ -108,10 +108,10 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sub
   <div class="container">
     <h1>Login Page</h1>
     <form action="login.php" method="post">
-        <input type="text" name="name" placeholder="Name" class="round-border"><br><br>
+        <!-- <input type="text" name="name" placeholder="Name" class="round-border"><br><br> -->
         <input type="email" name="email" placeholder="Email" class="round-border"><br><br>
         <input type="password" name="password" placeholder="Password" class="round-border"><br><br>
-        <input type="submit" value="Login">
+        <input type="submit" name="submit" value="Login">
     </form>
   </div>
 </body>
