@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+
+if(!$_SESSION['LoggedIn'] == TRUE){
+session_destroy();
+header('Location:login.php');
+}
+
     include('header.php');
     include('sidebar.php');
     
@@ -11,8 +19,5 @@
 
     include('footer.php');
     
-
-
-
 
 ?>
