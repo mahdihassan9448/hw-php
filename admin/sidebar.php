@@ -17,12 +17,12 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?page=components-alerts">
+            <a href="index.php?page=add-student">
               <i class="bi bi-circle"></i><span>Add student</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=components-accordion">
+            <a href="index.php?page=view student">
               <i class="bi bi-circle"></i><span>View student</span>
             </a>
           </li>
@@ -36,12 +36,12 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?page=forms-elements">
+            <a href="index.php?page=add-Teacher">
               <i class="bi bi-circle"></i><span>Add Teacher</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=forms-layouts">
+            <a href="index.php?page=view-techer">
               <i class="bi bi-circle"></i><span>View techer</span>
             </a>
           </li>
@@ -54,13 +54,13 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?page=tables-general">
-              <i class="bi bi-circle"></i><span>GPA</span>
+            <a href="index.php?page=gpa">
+              <i class="bi bi-circle"></i><span>add result</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=tables-data">
-              <i class="bi bi-circle"></i><span>View rasult</span>
+            <a href="index.php?page=view-rasult">
+              <i class="bi bi-circle"></i><span>View result</span>
             </a>
           </li>
         </ul>
@@ -72,18 +72,18 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?page=charts-chartjs">
-              <i class="bi bi-circle"></i><span>..</span>
+            <a href="index.php?page=a">
+              <i class="bi bi-circle"></i><span>A..</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=charts-apexcharts">
-              <i class="bi bi-circle"></i><span>..</span>
+            <a href="index.php?page=b">
+              <i class="bi bi-circle"></i><span>B..</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=charts-echarts">
-              <i class="bi bi-circle"></i><span>..</span>
+            <a href="index.php?page=c">
+              <i class="bi bi-circle"></i><span>C..</span>
             </a>
           </li>
         </ul>
