@@ -1,13 +1,13 @@
 <?php
     session_start();
-    include('DBconnection.php');
+    include('connection.php');
   
     if(isset($_POST['submit'])){
       if($_POST['submit'] == 'Login'){
-        $username = $_POST['Username'];
-        $password = $_POST['Password'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
   
-        $Query = "SELECT * FROM user WHERE Username = '$username' AND Password = '$password'";
+        $Query = "SELECT * FROM register WHERE username = '$username' AND Password = '$password'";
         $Result = mysqli_query($Connection, $Query);
         $Rows = mysqli_num_rows($Result);
   
@@ -95,14 +95,14 @@
                           <label for="yourUsername" class="form-label">Username</label>
                           <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="text" name="Username" class="form-control" id="yourUsername" required>
+                            <input type="text" name="username" class="form-control" id="yourUsername" required>
                             <div class="invalid-feedback">Please enter your username.</div>
                           </div>
                         </div>
     
                         <div class="col-12">
                           <label for="yourPassword" class="form-label">Password</label>
-                          <input type="password" name="Password" class="form-control" id="yourPassword" required>
+                          <input type="password" name="password" class="form-control" id="yourPassword" required>
                           <div class="invalid-feedback">Please enter your password!</div>
                         </div>
     

@@ -1,14 +1,14 @@
 <?php
-    include('DBconnection.php');
+    include('connection.php');
 
   if(isset($_POST['submit'])){
     if($_POST['submit'] == 'Register'){
-      $name = $_POST['Name'];
-      $email = $_POST['Email'];
-      $username = $_POST['Username'];
-      $password = $_POST['Password'];
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $username = $_POST['username'];
+      $password = $_POST['password'];
 
-      $Query = "INSERT INTO user(Name, Email, Username, Password) VALUES('$name', '$email', '$username', '$password')";
+      $Query = "INSERT INTO register (Name, email, username, password) VALUES('$name', '$email', '$username', '$password')";
 
       $Result = mysqli_query($Connection, $Query);
       if($Result){
@@ -95,13 +95,13 @@
                   action="register.php" enctype="multipart/form-data">
                     <div class="col-12">
                       <label for="yourName" class="form-label">Your Name</label>
-                      <input type="text" name="Name" class="form-control" id="yourName" required>
+                      <input type="text" name="name" class="form-control" id="yourName" required>
                       <div class="invalid-feedback">Please, enter your name!</div>
                     </div>
 
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Your Email</label>
-                      <input type="email" name="Email" class="form-control" id="yourEmail" required>
+                      <input type="email" name="email" class="form-control" id="yourEmail" required>
                       <div class="invalid-feedback">Please enter a valid Email adddress!</div>
                     </div>
 
@@ -109,14 +109,14 @@
                       <label for="yourUsername" class="form-label">Username</label>
                       <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="Username" class="form-control" id="yourUsername" required>
+                        <input type="text" name="username" class="form-control" id="yourUsername" required>
                         <div class="invalid-feedback">Please choose a username.</div>
                       </div>
                     </div>
 
                     <div class="col-12">
                       <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="Password" class="form-control" id="yourPassword" required>
+                      <input type="password" name="password" class="form-control" id="yourPassword" required>
                       <div class="invalid-feedback">Please enter your password!</div>
                     </div>
 

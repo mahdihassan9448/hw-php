@@ -3,7 +3,7 @@
 $Host  = 'localhost';
 $Name  = 'root';
 $Pass  = '';
-$DB    = 'dashbord';
+$DB    = 'sms';
 
 $Connection = mysqli_connect($Host, $Name, $Pass, $DB);
 

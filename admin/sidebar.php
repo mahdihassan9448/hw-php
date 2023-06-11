@@ -22,17 +22,17 @@
             </a>
           </li>
           <li>
-            <a href="index.php?page=view student">
+            <a href="index.php?page=view-student">
               <i class="bi bi-circle"></i><span>View student</span>
             </a>
           </li>
           
         </ul>
-      </li><!-- End Components Nav -->
+      </li><!-- End Student Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Techar</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-journal-text"></i><span>Teacher</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
@@ -41,12 +41,12 @@
             </a>
           </li>
           <li>
-            <a href="index.php?page=view-techer">
-              <i class="bi bi-circle"></i><span>View techer</span>
+            <a href="index.php?page=view-teacher">
+              <i class="bi bi-circle"></i><span>View teacher</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Forms Nav -->
+      </li><!-- End Techar Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
@@ -54,17 +54,17 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?page=gpa">
-              <i class="bi bi-circle"></i><span>add result</span>
+            <a href="index.php?page=add-result">
+              <i class="bi bi-circle"></i><span>Add result</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=view-rasult">
+            <a href="index.php?page=view-result">
               <i class="bi bi-circle"></i><span>View result</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Tables Nav -->
+      </li><!-- End Rsult Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
@@ -72,22 +72,17 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?page=a">
-              <i class="bi bi-circle"></i><span>A..</span>
+            <a href="index.php?page=add-account">
+              <i class="bi bi-circle"></i><span>Add account</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=b">
-              <i class="bi bi-circle"></i><span>B..</span>
-            </a>
-          </li>
-          <li>
-            <a href="index.php?page=c">
-              <i class="bi bi-circle"></i><span>C..</span>
+            <a href="index.php?page=view-account">
+              <i class="bi bi-circle"></i><span>view account</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Charts Nav -->
+      </li><!-- End Account Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
@@ -95,43 +90,17 @@
         </a>
         <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?page=icons-bootstrap">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
+            <a href="index.php?page=add-subject">
+              <i class="bi bi-circle"></i><span>Add subject</span>
             </a>
           </li>
           <li>
-            <a href="index.php?page=icons-remix">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="index.php?page=icons-boxicons">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
+            <a href="index.php?page=view-subject">
+              <i class="bi bi-circle"></i><span>View subject</span>
             </a>
           </li>
         </ul>
-      </li><!-- End Icons Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span>Examp</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="index.php?page=icons-bootstrap">
-              <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="index.php?page=icons-remix">
-              <i class="bi bi-circle"></i><span>Remix Icons</span>
-            </a>
-          </li>
-          <li>
-            <a href="index.php?page=icons-boxicons">
-              <i class="bi bi-circle"></i><span>Boxicons</span>
-            </a>
-          </li><!-- examp end -->
+      </li><!-- End subject Nav -->
 
     </ul>
 
