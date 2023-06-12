@@ -1,10 +1,10 @@
 <?php
-    include('../admin/db.php');
+    include('../admin/connection.php');
 
     if(isset($_POST['submit'])){
         if($_POST['submit'] == 'Delete'){
             $id = $_POST['id'];
-            $Query = "DELETE FROM students WHERE id = $id";
+            $Query = "DELETE FROM student WHERE id = $id";
             $Result = mysqli_query($Connection, $Query);
             if($Result){
                 echo "Data Deleted successfullt";
@@ -15,7 +15,7 @@
     }
 
 
-    $Query = "SELECT * FROM students";
+    $Query = "SELECT * FROM student";
     $Result = mysqli_query($Connection, $Query);
 
 
@@ -46,9 +46,9 @@
                             <td><?php echo $Rows['number']; ?></td>
                             <td><?php echo $Rows['subject']; ?></td>
                             <td><?php echo $Rows['address']; ?></td>
-                            <td><a href="index.php?page=std_edit&action=edit&id=<?php echo $Rows['id']; ?>">Edit</a></td>
+                            <td><a href="index.php?page=std-edit&action=edit&id=<?php echo $Rows['id']; ?>">Edit</a></td>
                             <td>
-                                <form action="index.php?page=viewstudents" enctype="multipart/form-data" method="post">
+                                <form action="index.php?page=view-student" enctype="multipart/form-data" method="post">
                                     <input type="hidden" name="id" value="<?php echo $Rows['id']; ?>">
                                     <input type="submit" name="submit" value="Delete">
                                 </form>

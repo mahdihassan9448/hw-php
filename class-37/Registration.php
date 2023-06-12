@@ -94,7 +94,7 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
-input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="submit"] {
+input[type="text"], input[type="number"], input[type="email"], input[type="password"], input[type="submit"] {
       border-radius: 20px;
     }
 

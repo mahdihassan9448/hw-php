@@ -1,5 +1,5 @@
 <?php
-    include('./db.php');
+    include('../connection.php');
 
     if(isset($_POST['submit'])){
         if($_POST['submit'] == 'Data'){

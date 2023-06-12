@@ -1,5 +1,5 @@
 <?php
-    include('../admin/db.php');
+    include('../admin/connection.php');
 
     if(isset($_POST['submit'])){
         if($_POST['submit'] == 'Delete'){
@@ -44,9 +44,9 @@
                             <td><?php echo $Rows['roll']; ?></td>
                             <td><?php echo $Rows['subject']; ?></td>
                             <td><?php echo $Rows['cgpa']; ?></td>
-                            <td><a href="index.php?page=edit_result&action=edit&id=<?php echo $Rows['id']; ?>">Edit</a></td>
+                            <td><a href="index.php?page=edit-result&action=edit&id=<?php echo $Rows['id']; ?>">Edit</a></td>
                             <td>
-                                <form action="index.php?page=view_result" enctype="multipart/form-data" method="post">
+                                <form action="index.php?page=view-result" enctype="multipart/form-data" method="post">
                                     <input type="hidden" name="id" value="<?php echo $Rows['id']; ?>">
                                     <input type="submit" name="submit" value="Delete">
                                 </form>
