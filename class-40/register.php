@@ -20,6 +20,31 @@
   //   }
   // }
 
+  include('DBconnection.php');
+
+  if(isset($_POST['submit'])){
+    if($_POST['submit'] == 'Register'){
+
+    }
+  }
+
+  if(isset($_POST['submit'])){
+    if($_POST['submit'] == 'Register'){
+
+      $Name = $_POST['Name'];
+      $Email = $_POST['Email'];
+      $Username = $_POST['Username'];
+      $Password = $_POST['Password'];
+
+      $Query = "INSERT INTO user (Name, Email, Username, Password) VALUES ('$Name', '$Email', '$Username', '$Password')";
+      $Name 
+      $Email
+      $username
+      $password
+
+    }
+  }
+
 
 ?>  
 
