@@ -1,10 +1,10 @@
 <?php
-  session_start();
+  // session_start();
 
-  if(!$_SESSION['LoggedIn'] == TRUE){
-    session_destroy();
-    header('Location:../login.php');
-  }
+  // if(!$_SESSION['LoggedIn'] == TRUE){
+  //   session_destroy();
+  //   header('Location:../login.php');
+  // }
 
 ?>
 

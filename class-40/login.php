@@ -1,24 +1,24 @@
 <?php
-    session_start();
-    include('DBconnection.php');
+    // session_start();
+    // include('DBconnection.php');
   
-    if(isset($_POST['submit'])){
-      if($_POST['submit'] == 'Login'){
-        $username = $_POST['Username'];
-        $password = $_POST['Password'];
+    // if(isset($_POST['submit'])){
+    //   if($_POST['submit'] == 'Login'){
+    //     $username = $_POST['Username'];
+    //     $password = $_POST['Password'];
   
-        $Query = "SELECT * FROM user WHERE Username = '$username' AND Password = '$password'";
-        $Result = mysqli_query($Connection, $Query);
-        $Rows = mysqli_num_rows($Result);
+    //     $Query = "SELECT * FROM user WHERE Username = '$username' AND Password = '$password'";
+    //     $Result = mysqli_query($Connection, $Query);
+    //     $Rows = mysqli_num_rows($Result);
   
-        if($Rows == 0){
-          echo "username and password does't match";
-        }else{
-          $_SESSION['LoggedIn'] = TRUE;
-          header('Location:index.php');
-        }
-      }
-    }
+    //     if($Rows == 0){
+    //       echo "username and password does't match";
+    //     }else{
+    //       $_SESSION['LoggedIn'] = TRUE;
+    //       header('Location:index.php');
+    //     }
+    //   }
+    // }
   
 ?>
     

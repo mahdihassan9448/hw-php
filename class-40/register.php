@@ -1,24 +1,24 @@
 <?php
-    include('DBconnection.php');
+  //   include('DBconnection.php');
 
-  if(isset($_POST['submit'])){
-    if($_POST['submit'] == 'Register'){
-      $name = $_POST['Name'];
-      $email = $_POST['Email'];
-      $username = $_POST['Username'];
-      $password = $_POST['Password'];
+  // if(isset($_POST['submit'])){
+  //   if($_POST['submit'] == 'Register'){
+  //     $name = $_POST['Name'];
+  //     $email = $_POST['Email'];
+  //     $username = $_POST['Username'];
+  //     $password = $_POST['Password'];
 
-      $Query = "INSERT INTO user(Name, Email, Username, Password) VALUES('$name', '$email', '$username', '$password')";
+  //     $Query = "INSERT INTO user(Name, Email, Username, Password) VALUES('$name', '$email', '$username', '$password')";
 
-      $Result = mysqli_query($Connection, $Query);
-      if($Result){
-        echo "Register  Successfully";
-        header('Location:login.php');       
-      }else{
-        echo "Something went rong!";
-      }
-    }
-  }
+  //     $Result = mysqli_query($Connection, $Query);
+  //     if($Result){
+  //       echo "Register  Successfully";
+  //       header('Location:login.php');       
+  //     }else{
+  //       echo "Something went rong!";
+  //     }
+  //   }
+  // }
 
 
 ?>  
